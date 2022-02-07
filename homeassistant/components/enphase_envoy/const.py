@@ -22,6 +22,7 @@ SENSORS = (
         name="Current Power Production",
         native_unit_of_measurement=POWER_WATT,
         state_class=SensorStateClass.MEASUREMENT,
+        device_class=SensorDeviceClass.ENERGY,
     ),
     SensorEntityDescription(
         key="daily_production",
@@ -49,6 +50,7 @@ SENSORS = (
         name="Current Power Consumption",
         native_unit_of_measurement=POWER_WATT,
         state_class=SensorStateClass.MEASUREMENT,
+        device_class=SensorDeviceClass.ENERGY,
     ),
     SensorEntityDescription(
         key="daily_consumption",
